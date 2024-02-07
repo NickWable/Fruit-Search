@@ -1,0 +1,76 @@
+
+/* adds a border around the search container */
+* {
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/*add margin and padding to the body and set the background color to a gradient*/
+body {
+  height: 100vh;
+  padding: 40px 40px;
+  background: linear-gradient(to left, #ff4d00, #f1c100);
+  background-repeat: no-repeat;
+}
+
+
+h1 {
+  text-align: center;
+}
+
+/* add border, color, and font to h1 */
+h1 span {
+  font-family: 'Poppins', sans-serif;
+  padding: 10px;
+  border-radius: 10px;
+  border: 5px solid #cccccc;
+  background-color: #cccccc;
+}
+
+/* Position the search container relative to the body and center it*/
+.search-container {
+  position: relative; 
+  width: 300px;
+  top: 40px; 
+  left: 50%; 
+  transform: translateX(-50%);
+}
+
+/* Style the input */
+.search-container input {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px; 
+  left: 50%; 
+  width: 100%; 
+  padding: 10px;
+  border-radius: 10px; 
+  border: 5px solid #cccccc; 
+  background-color: #cccccc;
+}
+
+/*Center the list items horizontally and stack them vertically*/
+.search-container ul { 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+}
+
+/* Remove bullet points from the list items */
+.search-container ul li {
+  list-style: none;
+}
+
+/*change font and add border around the list items*/
+ul li { 
+  min-width: 200px; 
+  white-space: nowrap; 
+  padding: 10px; 
+  background-color: #fff; 
+  border: 1px solid #ccc; 
+  border-radius: 5px; 
+  text-align: center; 
+}
+
+ul li:hover {
+  background-color: #eee; 
+}
